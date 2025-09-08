@@ -1,0 +1,13 @@
+using namespace std;
+int main() {
+ char X;
+ cin >> X;
+ if (X >= 'a' && X <= 'z') {
+ // small → capital
+ cout << char(X - 32) << endl;
+ } else if (X >= 'A' && X <= 'Z') {
+ // capital → small
+ cout << char(X + 32) << endl;
+ }
+ return 0;
+}
